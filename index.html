@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tem_con</title>
+    
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <main>
+        <div class="card">
+            <div class="face face1">
+                
+                <form id="tempCal" onsubmit="calculateTemp(); return false">
+                    <label for="temp"></label>
+                    <br/>
+                    <input type="number" name="temp" id="temp" class="p" placeholder="Enter Temperature">
+
+                    <select name="temp_diff" id="temp_diff">
+                        <option value="cel">°Celsius</option>
+                        <option value="fah">°Fahrenheit</option>
+                    </select>
+                    <br/>
+                    <input type="Submit" name="temp" id="submit"><br>
+                    <!-- <span id="resultContainer" placeholder="Result show here"></span> -->
+                    <div class="resultss">
+                        <label for="result"></label><br>
+                        <div id="resultContainer"></div>
+                    </div>
+                </form>
+            </div>
+            <div class="face face2">
+                <h2>Temperature converter</h2>
+            </div>
+    
+        </div>
+       
+        
+    </main>
+    <script src="./javascript.js"></script>
+</body>
+</html>
